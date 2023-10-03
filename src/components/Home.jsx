@@ -8,8 +8,8 @@ function Home() {
     <div name='home' className='w-full h-screen bg-[#0a192f]  '>
         {/* container */}
         <div className='max-w-[1000px] mx-auto flex  flex-col px-10 justify-center h-full  '>
-            <p className='text-[#889260]'>Hi, my name is</p>
-            <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Irfana Sulaiman</h1>
+            <p className='text-[#889260]'>Hi, I'm</p>
+            <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Irfana Sulaiman,</h1>
             <h2 className='text-4xl sm:text-7xl font-bold text-[#889260]'>Full Stack Developer</h2>
             <p className='text-[#889260] py-4 max-w-[700px]'>Specialized in building and designing exceptional digital experiences. Currently, focused on building responsive full stack web applications.</p>
             <div>
