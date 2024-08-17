@@ -8,7 +8,14 @@ import Python from '../assets/python.png';
 import Tailwind from '../assets/tailwind.png';
 import django from '../assets/django.png';
 import Amazon from '../assets/aws.png';
+import Spring from '../assets/spring.png';
+import MongoDb from '../assets/mongo.png';
+import github from '../assets/github.png';
 const Skills = () => {
+   // const skills = [HTML,CSS,JavaScript,ReactImg,Node,Python,Tailwind,django,Amazon,Spring]
+    const skillsObj ={"HTML":HTML,"CSS":CSS,"JavaScript":JavaScript,"React":ReactImg,"Node":Node,"Python":Python,"Tailwind":Tailwind,"Django":django,
+                        "Amazon":Amazon,"Spring":Spring,"MongoDb":MongoDb,"GitHub":github}
+    const skills = Object.entries(skillsObj);
   return (
     <div name = 'skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
@@ -18,39 +25,13 @@ const Skills = () => {
             </div>
 
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={HTML} alt="Html icon" />
-                    <p className='my-4'>HTML</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={django} alt="Html icon" />
-                    <p className='my-4'>Django</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={Amazon} alt="Html icon" />
-                    <p className='my-4'>Aws</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={Python} alt="Html icon" />
-                    <p className='my-4'>Python</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={CSS} alt="Html icon" />
-                    <p className='my-4'>CSS</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={JavaScript} alt="Html icon" />
-                    <p className='my-4'>JavaScript</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={Tailwind} alt="Html icon" />
-                    <p className='my-4'>Tailwind</p>
-                </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
-                    <img className='w-20 mx-auto' src={ReactImg} alt="Html icon" />
-                    <p className='my-4'>React</p>
-                </div>
-           
+                {skills.map(([skillname,skill], index) => (
+                    <div key={index} className='shadow-md shadow-[#040c16] hover:scale-105 duration-300'>
+                        <img className='w-20 mx-auto' src={skill}  />
+                        <p className='my-4'>{skillname} </p>
+                    </div>
+                ))}
+               
             </div>
         </div>
     </div>
