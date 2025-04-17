@@ -9,6 +9,8 @@ import classified from "../assets/projects/classified.png"
 import pantrypal from "../assets/projects/logoPantryPal.png"
 import stock from "../assets/projects/stock.jpg"
 import quizlet from "../assets/projects/quizlet.jpg"
+import littlestop from "../assets/projects/littlestop.png"
+import presentation from "../assets/projects/presentation.png"
 
 const Projects = () => {
   return (
@@ -45,7 +47,60 @@ const Projects = () => {
                    </div>
            </div>
            </div>
-           {/* Stockanalysz */}
+           { /* presentation */}
+            <div className='grid sm:grid-cols-2 gap-10  '>
+            <div className='flex flex-col gap-3 p-3'>
+            <p className='text-2xl font-bold text-[#889260]'>Presentation Generator</p>
+                  <ul className='list-disc list-outside marker:text-[#889260] marker:text-xl mb-3'>
+                    <li>Integrated Google Generative AI and Vertex AI for intelligent, context-aware content and image 
+                    generation </li>
+                    <li>Developed a robust Retrieval-Augmented Generation (RAG) pipeline using Chroma vectorstore 
+                    for contextual content retrieval and synthesis </li>
+                    <li>Architected a flexible, multi-modal system supporting diverse document types and adaptive 
+                    instructional levels </li>
+                  <li>Implemented Firebase integration for efficient image storage and retrieval </li>
+                   </ul>
+
+                    <p >Technologies used : <span className='text-xl font-bold text-[#889260]' >Python, LangChain, Google Generative AI, Vertex AI, ChromaDB, Firebase,Docker     </span></p>
+            
+                    <div className='pt-4 text-left flex gap-4'>
+                            <a href="https://www.loom.com/share/514fc49054a94040ab67726b5c231dc2?sid=c1b77526-77f2-408d-bdf1-c44a381e9190" target='_blank'>
+                                <button className='text-white group  px-6 py-3 border-2 rounded  hover:bg-[#889260]  hover: border-[#889260] '>Demo</button>
+                            </a>
+                            <a href="https://github.com/marvelai-org/marvel-ai-backend" target='_blank'>
+                                <button className='text-white group  px-6 py-3 border-2 rounded  hover:bg-[#889260]  hover: border-[#889260] '>Code</button>
+                            </a>
+                    </div>
+            </div>
+                  
+            <img src={presentation} alt="" className='w-[500px] h-[350px] object-contain rounded-md bg-contain hover:scale-[1.1] duration-300 p-2 border-[1px] border-[#889260] ' />
+            </div>
+          
+            {/* littlestop */}
+            <div className='grid sm:grid-cols-2 gap-10  '>
+            <img src={littlestop} alt="" className='w-[500px] h-[350px] object-contain rounded-md bg-contain hover:scale-[1.1] duration-300 p-2 border-[1px] border-[#889260] ' />
+        
+            <div className='flex flex-col gap-3 p-3'>
+             <p className='text-2xl font-bold text-[#889260]'>LittleStop</p>
+                 <ul className='list-disc list-outside marker:text-[#889260] marker:text-xl mb-3'>
+                   <li>Developed and deployed fully functional e commerce website. </li>
+                   <li>Product catalog with e-commerce features.</li>
+                    <li>Fully responsive design for optimal user experience.</li>
+                  </ul>
+
+                   <p >Technologies used : <span className='text-xl font-bold text-[#889260]' >React, Java,Spring,Postgesql,Tailwind </span></p>
+           
+                   <div className='pt-4 text-left flex gap-4'>
+                           <a href="https://littlestop-frontend.onrender.com/" target='_blank'>
+                               <button className='text-white group  px-6 py-3 border-2 rounded  hover:bg-[#889260]  hover: border-[#889260] '>Demo</button>
+                           </a>
+                           <a href="https://github.com/irfanariyaz/littlestop_backend"  target='_blank'>
+                               <button className='text-white group  px-6 py-3 border-2 rounded  hover:bg-[#889260]  hover: border-[#889260] '>Code</button>
+                           </a>
+                   </div>
+           </div>
+           </div>
+            {/* Stockanalysz */}
             <div className='grid sm:grid-cols-2 gap-10  '>
             <div className='flex flex-col gap-3 p-3'>
             <p className='text-2xl font-bold text-[#889260]'>Stockanalyz</p>
@@ -71,10 +126,12 @@ const Projects = () => {
                   
             <img src={stock} alt="" className='  w-[500px] h-[350px] object-center rounded-md bg-contain hover:scale-[1.1] duration-300 p-2 border-[1px] border-[#889260] ' />
             </div>
+        
             {/* Classified */}
             <div className='grid sm:grid-cols-2 gap-10  '>
              
              <img src={classified} alt="" className=' w-[500px] h-[350px] object-contain rounded-md bg-contain hover:scale-[1.1] duration-300 p-2 border-[1px] border-[#889260] ' />
+  
            
 
              <div className='flex flex-col gap-3 p-3'>
